@@ -8,6 +8,7 @@
 <!-- jQuery file -->
 <script src="__PUBLIC__/js/jquery.min.js"></script>
 <script src="__PUBLIC__/js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+<script src="__PUBLIC__/js/proShow.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 var $ = jQuery.noConflict();
 $(function() {
@@ -21,31 +22,6 @@ $(".trigger").click(function(){
 
 
 
-$(function()
-        {
-
-        $('a').click(function(){
-            $.get($(this).attr('title'),function(jdata){
-                if(jdata.status == 1 )
-                alert(JSON.stringify(jdata.content));
-                });
-            });
-        //alert('ss');
-//        $('button').bind('click',function()
-//            {
-//            //alert('2');
-//            $.get('__MODULE__/Ajax/getProduct',function(jdata){
-//                //alert(data);
-//                if(jdata.status == 1 )
-//                alert(JSON.stringify(jdata.content));
-//                //alert(JSON.stringify(data));
-//
-//                });
-//
-//            });
-        }
- );
-    
 
 </script>
 </head>
@@ -93,11 +69,8 @@ $(function()
     <thead>
     	<tr>
         	<th></th>
-            <th>Product</th>
-            <th>Details</th>
-            <th>Price</th>
+            <th>Filename</th>
             <th>Date</th>
-            <th>Category</th>
             <th>User</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -109,73 +82,6 @@ $(function()
         </tr>
     </tfoot>
     <tbody>
-    	<tr class="odd">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Box Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>45$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-            <td>Alex</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
-        </tr>
-    	<tr class="even">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Trial Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>155$</td>
-            <td>12/04/2011</td>
-            <td>web design</td>
-            <td>Carrina</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
-        </tr>
-    	<tr class="odd">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Hosting Pack</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>45$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-            <td>Alex</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td
-        ></tr>
-    	<tr class="even">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Duo Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>745$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-            <td>Alex</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td
-        ></tr>
-    	<tr class="odd">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Alavasti Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>45$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-            <td>John</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td
-        ></tr>
-    	<tr class="even">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Box Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>45$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-            <td>Doe</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td
-        ></tr>
-  
         
     </tbody>
 </table>
